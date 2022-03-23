@@ -7,16 +7,16 @@ Ejercicio
 
 * Agregar una tabla llamada categorias con las siguientes columnas:
 
-Id (entero)
-Nombre (texto)
+Id (entero)   
+Nombre (texto)   
 
 * Y agregar datos de ejemplo
 
 * Cree una tabla **libros**, agregar las columnas
 
-Id (entero)
-Nombre (texto)
-idcategoria (entero)
+Id (entero)   
+Nombre (texto)  
+idcategoria (entero)   
 
 
 * Luego, en la misma edicion de la tabla **libros** crear una llave foranea.
@@ -25,8 +25,8 @@ idcategoria (entero)
 
 # 1 en la consola de Nuget escribir lo siguiente:
 
-> Install-Package MySql.EntityFrameworkCore -Version 5.0.10
-> Install-Package Microsoft.EntityFrameworkCore.Tools -Version 5.0.15
+> Install-Package MySql.EntityFrameworkCore -Version 5.0.10   
+> Install-Package Microsoft.EntityFrameworkCore.Tools -Version 5.0.15    
 
 # 2 Luego, en la misma consola ejecutar lo siguiente
 
