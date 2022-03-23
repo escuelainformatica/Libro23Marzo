@@ -12,7 +12,12 @@ Nombre (texto)
 
 * Y agregar datos de ejemplo
 
-* Luego, editar la tabla **libros** y agregar una columna llamada idcategoria
+* Cree una tabla **libros**, agregar las columnas
+
+Id (entero)
+Nombre (texto)
+idcategoria (entero)
+
 
 * Luego, en la misma edicion de la tabla **libros** crear una llave foranea.
 
