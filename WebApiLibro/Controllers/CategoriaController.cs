@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 using WebApiLibro.basevisual;
 
 namespace WebApiLibro.Controllers
-{
-    
+{    
     [ApiController]
     public class CategoriaController : ControllerBase
     {
