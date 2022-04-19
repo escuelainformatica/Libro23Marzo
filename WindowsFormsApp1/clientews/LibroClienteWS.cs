@@ -24,16 +24,18 @@ namespace WindowsFormsApp1.clientews
                     // Newtownsoft
                     resultado = JsonConvert.DeserializeObject<List<Libro>>(contenido);
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                File.AppendAllText("errores.log", ex.Message + " " 
-                    + ex.InnerException.Message+ " "+DateTime.Now.ToString() +"\n");
+                var usuariocarpeta = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                File.AppendAllText(usuariocarpeta + "\\errores.log", ex.Message + " "
+                + ex.InnerException.Message + " " + DateTime.Now.ToString() + "\n");
 
                 resultado = null;
             }
             return resultado;
         }
-        public async Task<bool> Insertar(Libro libro)
+        public static async Task<bool> Insertar(Libro libro)
         {
             var resultado = true;
             try
@@ -50,10 +52,11 @@ namespace WindowsFormsApp1.clientews
                     resultado = JsonConvert.DeserializeObject<bool>(contenidoRespuesta);
 
                 }
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
-                File.AppendAllText("errores.log","LibroClientws.insertar(): " + ex.Message + " "
-                    + ex.InnerException.Message + " " + DateTime.Now.ToString() + "\n");
+                File.AppendAllText("errores.log", "LibroClientws.insertar(): " + ex.Message + " "
+                + ex.InnerException.Message + " " + DateTime.Now.ToString() + "\n");
                 resultado = false;
             }
             return resultado;

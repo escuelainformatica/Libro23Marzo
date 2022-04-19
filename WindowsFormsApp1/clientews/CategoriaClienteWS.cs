@@ -14,7 +14,7 @@ namespace WindowsFormsApp1.clientews
     {
         // 
 
-        public async Task<List<Categoria>> LeerAsync()
+        public static async Task<List<Categoria>> LeerAsync()
         {
             var resultado = new List<Categoria>();
             try

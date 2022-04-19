@@ -46,8 +46,8 @@ namespace WindowsFormsApp1
             libro.Titulo = "libro #11";
             libro.IdCategoria = 2;
             
-            LibroClienteWS libroClienteWS = new LibroClienteWS();
-            await libroClienteWS.Insertar(libro);
+            //LibroClienteWS libroClienteWS = new LibroClienteWS();
+            //await libroClienteWS.Insertar(libro);
 
 
             // Thread.Sleep(40000);
@@ -55,9 +55,8 @@ namespace WindowsFormsApp1
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            var catclientws = new CategoriaClienteWS();
-
-            var categorias = await catclientws.LeerAsync();
+       
+            var categorias = await CategoriaClienteWS.LeerAsync();
 
             comboBox1.DataSource = categorias;
 

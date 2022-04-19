@@ -29,10 +29,10 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn5 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn6 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn7 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
-            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn8 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn1 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn2 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn3 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
+            Syncfusion.WinForms.DataGrid.GridTextColumn gridTextColumn4 = new Syncfusion.WinForms.DataGrid.GridTextColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.sfDataGrid1 = new Syncfusion.WinForms.DataGrid.SfDataGrid();
             this.button2 = new System.Windows.Forms.Button();
@@ -56,24 +56,24 @@ namespace WindowsFormsApp1
             // sfDataGrid1
             // 
             this.sfDataGrid1.AccessibleName = "Table";
-            gridTextColumn5.HeaderText = "Column1";
-            gridTextColumn5.MappingName = "Id";
-            gridTextColumn6.HeaderText = "Column2";
-            gridTextColumn6.MappingName = "Titulo";
-            gridTextColumn7.HeaderText = "Column3";
-            gridTextColumn7.MappingName = "IdCategoria";
-            gridTextColumn8.AllowResizing = true;
-            gridTextColumn8.HeaderText = "Column4";
-            gridTextColumn8.MappingName = "IdCategoriaNavigation.Nombre";
-            gridTextColumn8.Width = 300D;
-            this.sfDataGrid1.Columns.Add(gridTextColumn5);
-            this.sfDataGrid1.Columns.Add(gridTextColumn6);
-            this.sfDataGrid1.Columns.Add(gridTextColumn7);
-            this.sfDataGrid1.Columns.Add(gridTextColumn8);
-            this.sfDataGrid1.Location = new System.Drawing.Point(33, 275);
+            gridTextColumn1.HeaderText = "Column1";
+            gridTextColumn1.MappingName = "Id";
+            gridTextColumn2.HeaderText = "Column2";
+            gridTextColumn2.MappingName = "Titulo";
+            gridTextColumn3.HeaderText = "Column3";
+            gridTextColumn3.MappingName = "IdCategoria";
+            gridTextColumn4.AllowResizing = true;
+            gridTextColumn4.HeaderText = "Column4";
+            gridTextColumn4.MappingName = "IdCategoriaNavigation.Nombre";
+            gridTextColumn4.Width = 300D;
+            this.sfDataGrid1.Columns.Add(gridTextColumn1);
+            this.sfDataGrid1.Columns.Add(gridTextColumn2);
+            this.sfDataGrid1.Columns.Add(gridTextColumn3);
+            this.sfDataGrid1.Columns.Add(gridTextColumn4);
+            this.sfDataGrid1.Location = new System.Drawing.Point(25, 159);
             this.sfDataGrid1.Name = "sfDataGrid1";
             this.sfDataGrid1.PreviewRowHeight = 35;
-            this.sfDataGrid1.Size = new System.Drawing.Size(646, 150);
+            this.sfDataGrid1.Size = new System.Drawing.Size(646, 244);
             this.sfDataGrid1.TabIndex = 2;
             this.sfDataGrid1.Text = "sfDataGrid1";
             // 
@@ -116,7 +116,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1033, 450);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.numericUpDown1);
